@@ -1,18 +1,17 @@
-import Body from "./components/Body";
-import Header from "./components/Header"
+import React from "react";
+import Header from "./components/Header";
 import Footer from "./components/Footer";
-import {
-  BrowserRouter,
-  Routes,
-  Route
-} from "react-router-dom";
-
+import Faq from "./components/Faq";
+import Body from "./components/Body";
+import Tofel from "./components/Tofel";
+import Ielts from "./components/Ielts";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SuperTokens, { SuperTokensWrapper } from "supertokens-auth-react";
 import { getSuperTokensRoutesForReactRouterDom } from "supertokens-auth-react/ui";
 import Passwordless from "supertokens-auth-react/recipe/passwordless";
 import Session from "supertokens-auth-react/recipe/session";
-import * as reactRouterDom from "react-router-dom";
 import { PasswordlessPreBuiltUI } from 'supertokens-auth-react/recipe/passwordless/prebuiltui';
+import * as reactRouterDom from "react-router-dom";
 
 SuperTokens.init({
   appInfo: {
@@ -30,21 +29,21 @@ SuperTokens.init({
   ]
 });
 
-
 function App() {
   return (
     <SuperTokensWrapper>
       <BrowserRouter>
-        <Routes>
-        {getSuperTokensRoutesForReactRouterDom(reactRouterDom, [PasswordlessPreBuiltUI])}
-        <Route path="*" element={
-            <div>
-              <Header />
-              <Body />
-              <Footer />
-            </div>
-          } />
-        </Routes>
+        <div>
+          <Header />
+          <Routes>
+            {getSuperTokensRoutesForReactRouterDom(reactRouterDom, [PasswordlessPreBuiltUI])}
+            <Route path="/" element={<Body />} />
+            <Route path="/Tofel" element={<Tofel />} />
+            <Route path="/Ielts" element={<Ielts />} />
+          </Routes>
+          <Faq />
+          <Footer />
+        </div>
       </BrowserRouter>
     </SuperTokensWrapper>
   );

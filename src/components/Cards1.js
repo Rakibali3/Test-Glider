@@ -1,6 +1,6 @@
 const Cards1 = () => {
     return (
-        <div className="bg-[rgb(233,237,238)]  border-t-2 border-gray-200 m-8  ">
+        <div className="bg-[rgb(247,249,251)]  border-t-2 border-gray-200 m-8  ">
             <div className="m-24 flex flex-col gap-4">
                 <h3 className="text-center text-3xl">Global No. 1 in English Test Prep AI</h3>
                 <h1 className="text-center text-5xl font-semibold">Get to Your Dream Score Faster</h1>
@@ -16,8 +16,8 @@ const Cards1 = () => {
                             <button className="border-2 border-black p-3 rounded-xl hover:bg-[rgb(214,223,233)]">Take Free Mock Test</button>
                         </div>
                     </div>
-                    <div className="bg-[rgb(233,237,238)] h-full w-3/6 rounded-3xl">
-
+                    <div className="bg-[rgb(247,249,251)] h-full w-3/6 rounded-3xl flex items-center justify-center">
+                        <img alt="" src="https://www.testglider.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fintro-card-1.29eae3db.gif&w=3840&q=100" className=" w-11/12 h-4/5" />
                     </div>
                 </div>
 
@@ -31,8 +31,8 @@ const Cards1 = () => {
                             <button className="border-2 border-black p-3 rounded-xl hover:bg-[rgb(214,223,233)]">Get AI Grade in 2 Minutes</button>
                         </div>
                     </div>
-                    <div className="bg-[rgb(233,237,238)] h-full w-3/6 rounded-3xl">
-
+                    <div className="bg-[rgb(247,249,251)] h-full w-3/6 rounded-3xl flex items-center justify-center ">
+                        <img alt="" src="https://www.testglider.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fintro-card-2.1e16104b.gif&w=1080&q=100" className=" w-11/12 h-4/5" />
                     </div>
                 </div>
 
@@ -46,7 +46,8 @@ const Cards1 = () => {
                             <button className="border-2 border-black p-3 rounded-xl hover:bg-[rgb(214,223,233)]">Meet AI Chatbot, Glidy</button>
                         </div>
                     </div>
-                    <div className="bg-[rgb(233,237,238)] h-full w-3/6 rounded-3xl">
+                    <div className="bg-[rgb(247,249,251)] h-full w-3/6 rounded-3xl flex items-center justify-center">
+                    <img alt="" src="https://www.testglider.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fintro-card-3.12085ebb.gif&w=1920&q=100" className=" w-11/12 h-full"/>
                     </div>
                 </div>
             </div>
